@@ -148,7 +148,7 @@
           </a>
         </li>
         <!-- 控制概览 -->
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="console.html">
             <span class="menu-title">控制概览</span>
             <i class="mdi mdi-home menu-icon"></i>
@@ -178,7 +178,7 @@
           </a>
         </li>
         <!-- 运动信息 -->
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="movement.html">
             <span class="menu-title">运动信息</span>
             <i class="mdi mdi-format-list-bulleted menu-icon"></i>
@@ -242,18 +242,18 @@
     <!-- 右侧主面板 -->
     <div class="main-panel">
       <div class="content-wrapper">
-        <!-- 主面板头部    -->
+        <!-- 机器人运行状态    -->
         <div class="page-header">
           <h3 class="page-title">
             <span class="page-title-icon bg-gradient-primary text-white mr-2">
-              <i class="mdi mdi-home"></i>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
             </span>
-            用户控制面板
+            机器人运行状态
           </h3>
           <nav aria-label="breadcrumb">
             <ul class="breadcrumb">
               <li class="breadcrumb-item active" aria-current="page">
-                <span></span>概览
+                <span></span>详情
                 <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
               </li>
             </ul>
@@ -321,251 +321,6 @@
                 <h4 class="card-title">机器人任务完成数据</h4>
                 <canvas id="traffic-chart"></canvas>
                 <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 用户任务列表 -->
-        <div class="row">
-          <div class="col-12 grid-margin">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">用户任务列表</h4>
-                <div class="table-responsive">
-                  <!-- 列表表格 -->
-                  <table class="table">
-                    <!-- 表头 -->
-                    <thead>
-                      <tr>
-                        <th>
-                          发布者
-                        </th>
-                        <th>
-                          任务项
-                        </th>
-                        <th>
-                          执行状态
-                        </th>
-                        <th>
-                          发布时间
-                        </th>
-                        <th>
-                          任务 ID
-                        </th>
-                      </tr>
-                    </thead>
-                    <!-- 数据 -->
-                    <tbody>
-                      <tr>
-                        <td>
-                          <img src="../images/faces/face1.jpg" class="mr-2" alt="image">
-                          陈麒先
-                        </td>
-                        <td>
-                          超市建图
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-success">完成</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00001
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="../images/faces/face2.jpg" class="mr-2" alt="image">
-                          刘亮
-                        </td>
-                        <td>
-                          航点标定
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-warning">进行</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00002
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="../images/faces/face3.jpg" class="mr-2" alt="image">
-                          周尚纯
-                        </td>
-                        <td>
-                          语音识别
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-info">挂起</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00003
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="../images/faces/face4.jpg" class="mr-2" alt="image">
-                          孙琦
-                        </td>
-                        <td>
-                          目标抓取
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-danger">失败</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00004
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="../images/faces/face5.jpg" class="mr-2" alt="image">
-                          秦枫
-                        </td>
-                        <td>
-                          避障检测
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-info">挂起</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00005
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">任务执行列表</h4>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>
-                          任务编号
-                        </th>
-                        <th>
-                          任务项
-                        </th>
-                        <th>
-                          最迟完成时间
-                        </th>
-                        <th>
-                          执行进度
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          KL-00001
-                        </td>
-                        <td>
-                          环境建图
-                        </td>
-                        <td>
-                          May 23, 2019
-                        </td>
-                        <td>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 100%"
-                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          KL-00002
-                        </td>
-                        <td>
-                          航点标定
-                        </td>
-                        <td>
-                          May 23, 2019
-                        </td>
-                        <td>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 85%"
-                              aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          KL-00003
-                        </td>
-                        <td>
-                          语音识别
-                        </td>
-                        <td>
-                          May 23, 2019
-                        </td>
-                        <td>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 75%"
-                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          KL-00004
-                        </td>
-                        <td>
-                          目标抓取
-                        </td>
-                        <td>
-                          May 23, 2019
-                        </td>
-                        <td>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 10%"
-                              aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          KL-00005
-                        </td>
-                        <td>
-                          避障检测
-                        </td>
-                        <td>
-                          May 23, 2019
-                        </td>
-                        <td>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 45%"
-                              aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
           </div>
