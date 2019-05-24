@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>麒麟科技|KyLin Technology</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../consoleVendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../consoleVendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/consoleStyle.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../images/favicon.png" />
 </head>
@@ -61,7 +61,7 @@
             <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
           </a>
         </li>
-        
+
         <!-- 控制信息 -->
         <li class="nav-item dropdown" title="系统通知">
           <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
@@ -259,7 +259,7 @@
             </ul>
           </nav>
         </div>
-        
+
         <!-- 用户任务列表 -->
         <div class="row">
           <div class="col-12 grid-margin">
@@ -526,15 +526,20 @@
 
   <!-- 加载必要的插件与脚本 -->
   <!-- plugins:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
-  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <script src="../consoleVendors/js/vendor.bundle.base.js"></script>
+  <script src="../consoleVendors/js/vendor.bundle.addons.js"></script>
   <!-- endinject -->
   <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/misc.js"></script>
+  <script src="../js/consolejs/off-canvas.js"></script>
+  <script src="../js/consolejs/misc.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
+  <script src="../js/consolejs/dashboard.js"></script>
+  <script src="../js/scripts/easeljs-0.7.1.min.js"></script>
+  <script src="../js/scripts/eventemitter2.min.js"></script>
+  <script src="../js/roslibjs/build/roslib.min.js"></script>
+  <script src="../js/scripts/ros2djs/build/ros2d.min.js"></script>
+  <script src="../js/consolejs/socket.js"></script>
   <!-- End custom js for this page-->
 
 </body>
