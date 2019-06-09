@@ -1,6 +1,7 @@
-// <!-- 作者：周尚纯 -->
+// <!-- 作者：周尚纯 & 陈麒先 -->
 // <!-- 编写时间：2019.5.23 -->
 // <!-- 发布时间：2019.5.28 -->
+// <!-- 最终更新时间：2019.6.9 -->
 var socket = new WebSocket("ws://127.0.0.1:8000");
 
 // begin Chris.Chen //
@@ -72,23 +73,27 @@ socket.onclose = function (event) {
     let conFail = document.getElementsByClassName('connection-fail')[0];
     let conWait = document.getElementsByClassName('connection-wait')[0];
     console.log(conSuccess);
-    conSuccess.style.display = "block";
-    conFail.style.display = "none";
+    conSuccess.style.display = "none";
+    conFail.style.display = "block";
     conWait.style.display = "none";
     console.log("on close!");
 };
 
-function sendMsg() {
+function startMsg() {
     // var txt = document.getElementById('txt');
     socket.send("start");
     // txt.value = ""; 
-
-    console.log("sendMsg()start");
+    console.log("startMsg()start");
 }
 
 function stopMsg(){
-    socket.send("stop-5");
-    console.log("sendMsg()start");
+    socket.send("stop");
+    console.log("stopMsg()start");
+}
+
+function resumeMsg(){
+    socket.send("resume");
+    console.log("resumeMsg()start");
 }
 
 function closeConn() {

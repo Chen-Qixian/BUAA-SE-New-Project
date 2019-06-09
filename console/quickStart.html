@@ -158,49 +158,49 @@
         <!-- 机器人视图 -->
         <li class="nav-item">
           <!-- 机器人视图一级导航 -->
-          <a class="nav-link" data-toggle="collapse" href="#robot-view" aria-expanded="false" aria-controls="ui-basic">
+          <!-- <a class="nav-link" data-toggle="collapse" href="#robot-view" aria-expanded="false" aria-controls="ui-basic">
             <span class="menu-title">机器人视图</span>
             <i class="menu-arrow"></i>
             <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-          </a>
+          </a> -->
           <!-- 机器人视图二级导航 -->
-          <div class="collapse" id="robot-view">
+          <!-- <div class="collapse" id="robot-view">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="#">摄像头信息</a></li>
               <li class="nav-item"> <a class="nav-link" href="#">建图可视化</a></li>
             </ul>
-          </div>
+          </div> -->
         </li>
         <!-- 一键启动 -->
         <li class="nav-item active">
           <a class="nav-link" href="#">
-            <span class="menu-title">一键启动</span>
+            <span class="menu-title">一键控制</span>
             <i class="mdi mdi-contacts menu-icon"></i>
           </a>
         </li>
         <!-- 运动信息 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="movement.html">
             <span class="menu-title">运动信息</span>
             <i class="mdi mdi-format-list-bulleted menu-icon"></i>
           </a>
-        </li>
+        </li> -->
         <!-- 功耗信息 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="power.html">
             <span class="menu-title">功耗信息</span>
             <i class="mdi mdi-chart-bar menu-icon"></i>
           </a>
-        </li>
+        </li> -->
         <!-- 任务列表 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="tasks.html">
             <span class="menu-title">任务列表</span>
             <i class="mdi mdi-table-large menu-icon"></i>
           </a>
-        </li>
+        </li> -->
         <!-- 基本控制 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false"
             aria-controls="general-pages">
             <span class="menu-title">基本控制</span>
@@ -216,15 +216,16 @@
               <li class="nav-item"> <a class="nav-link" href="#"> 停止 </a></li>
             </ul>
           </div>
-        </li>
+        </li> -->
         <!-- 新任务 -->
         <li class="nav-item sidebar-actions">
           <span class="nav-link">
             <div class="border-bottom">
-              <h6 class="font-weight-normal mb-3">一键启动</h6>
+              <h6 class="font-weight-normal mb-3">控制机器人</h6>
             </div>
+            <button class="btn btn-block btn-lg btn-gradient-primary mt-4" onclick="startMsg();">立即启动</button>
             <button class="btn btn-block btn-lg btn-gradient-danger mt-4" onclick="stopMsg();">紧急停止</button>
-            <button class="btn btn-block btn-lg btn-gradient-primary mt-4" onclick="sendMsg();">立即启动</button>
+            <button class="btn btn-block btn-lg btn-gradient-success mt-4" onclick="resumeMsg();">恢复运行</button>
             
             
             <div class="mt-4">
@@ -233,9 +234,9 @@
               </div>
               <ul class="gradient-bullet-list mt-4">
                 <li>免费版</li>
-                <li>家庭版</li>
+                <!-- <li>家庭版</li>
                 <li>企业版</li>
-                <li>豪华版</li>
+                <li>豪华版</li> -->
               </ul>
             </div>
           </span>
@@ -313,9 +314,7 @@
               <div class="card-body">
                 <h4 class="card-title">任务列表</h4>
                 <div class="table-responsive">
-                  <!-- 列表表格 -->
-                  <table class="table">
-                    <!-- 表头 -->
+                  <!-- <table class="table">
                     <thead>
                       <tr>
                         <th>
@@ -331,8 +330,7 @@
                           任务 ID
                         </th>
                       </tr>
-                    </thead>
-                    <!-- 数据 -->
+                    </thead> 
                     <tbody>
                       <tr>
                         <td>
@@ -348,64 +346,8 @@
                           KL-1
                         </td>
                       </tr>
-                      <!-- <tr>
-                        <td>
-                          航点标定
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-warning">进行</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00002
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          语音识别
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-info">挂起</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00003
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          目标抓取
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-danger">失败</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00004
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          避障检测
-                        </td>
-                        <td>
-                          <label class="badge badge-gradient-info">挂起</label>
-                        </td>
-                        <td>
-                          May 21, 2019
-                        </td>
-                        <td>
-                          KL-00005
-                        </td>
-                      </tr> -->
                     </tbody>
-                  </table>
+                  </table> -->
                 </div>
               </div>
             </div>
